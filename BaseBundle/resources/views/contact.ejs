@@ -7,7 +7,7 @@
   <body>
 	<% include ../partials/_header.ejs %>
 
-	 <section id="gray" class="container-fluid--bg-lightgray"> <!-- About Us start -->
+<section id="gray" class="container-fluid--bg-lightgray"> <!-- About Us start -->
   <div class="container-fluid container-fluid--bordered"> <!-- container-fliuid start -->
     <div class="container font--middle"> <!-- container start -->
       <h3 class="container--header-pad-sm font--lg">About Us</h3>
@@ -15,10 +15,79 @@
       <p><small>Our goal is to develop and publish high quality and user-friendly software that provides convenient computing enviroments to our users.</small></p>
      
     </div> <!-- container end -->
+  </div> <!-- container fliud end -->
+</section> <!-- About us end --><!-- Buy now start here -->
+
+  <section id="white"> <!-- Contact us section start -->
+  <div class="container-fluid"> <!-- container-fliuid start -->
+    <div class="container"> <!-- container start -->
+      <p class="font--middle">We would love to hear from you! Please fill out this form and we will get in touch with you shortly.</p>
+      <div class="row row--pad-bottom"> <!-- row start -->
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8"> <!-- form column starts here -->
+             <div class="panel panel-default"> <!-- form start -->
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                  <p class="font--md">Contact Us</p>
+                </div>
+              <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Product</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="PicPick">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Category</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="-Select-">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputPassword1" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Subject</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject Message">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Details</label>
+                      <input type="text" class="form-control" id="textarea" placeholder="Message">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">License</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="For premium support, please enter your valid license key.">
+                    </div>
+                        <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> I'm not a robot
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            
+              </div> <!-- form end -->
+          </div> <!-- contact us section starts here -->
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- E;mail support column starts here -->
+            <div class="panel panel-default"> 
+              <div class="panel-heading">
+                <p class="font--md">E-mail Support</p>
+              </div>
+              <!-- List group -->
+              <ul class="list-group">
+                <li class="list-group-item">
+                  You can also contact us via email at : <a href="contact@ngwin.com">contact@ngwin.com<br><br>
+                  <p class="font--middle"><a href="" type="button" class="btn btn-primary">SEND US AN EMAIL</a></p>
+                </li>
+              </ul>
+          </div> 
+
+          </div> <!-- email support columns ends here -->
+      </div>
+      
+    </div> <!-- container end -->
   </div> <!-- container0fliud end -->
-</section> <!-- Affiliate Program end -->
+</section> <!-- Buy now end -->
 
-
+<!-- Email Support end here -->
 
 
 	<% include ../partials/_footer.ejs %>
