@@ -1,0 +1,11 @@
+@mixin padding-all ($padding-topBottom, $padding-leftRight) {
+	padding : $padding-topBottom $padding-leftRight;
+}
+
+@mixin padding-all-split ($padding-top, $padding-right, $padding-bottom, $padding-left) {
+	padding-top : $padding-top;
+	padding-right : $padding-right;
+	padding-left : $padding-left;
+	padding-bottom : $padding-bottom;
+}
+

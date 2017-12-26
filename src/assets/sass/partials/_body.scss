@@ -1,0 +1,139 @@
+@import '_variables.scss';
+@import 'components/fonts.scss';
+@import 'mixins/padding.scss';
+@import 'mixins/margin.scss';
+
+
+body {
+	font-family : 'Open Sans', sans-serif !important;
+	 -webkit-font-smoothing: antialiased;
+	line-height : 20px;
+	color : #333 !important; /* TODO -- ideally this should be done in bootstrap precustomization */
+}
+
+.row {
+	 &--bg-gray {
+	    background : $row-background-color !important;
+	    padding : 10px 0px;
+	    }
+	 &--bg-plain {
+	 	@include padding-all(15px, 0px);
+	 	border-top : 1px solid #ddd;
+	 	border-bottom : 1px solid #ddd;
+	 }
+	 &--bg-white {
+	 	@include padding-all(15px, 0px);
+	 	border : 1px solid #ddd;
+	 	background : #fff;
+	 	margin-bottom : 40px;
+	 }
+	 &--padding-tb50 {
+	 	@include padding-all(50px, 0px);
+	 }
+	 &--pad-bottom {
+	   @include padding-all-split(0px, 0px, 40px, 0px);
+	 }
+	 &--text-center {
+	 	text-align: center;
+	 }
+}
+
+.container-fluid {
+	&--bg-plain {
+		padding : 15px 0px;
+	 	border-top : 1px solid #ddd;
+	 	border-bottom : 1px solid #ddd;
+	}
+	&--bg-lightgray {
+		background : $body-background-color;
+	}
+	&--bg-darkgray {
+		background : $gray-night;
+	}
+	&--bordered {
+		border-top : 1px solid #ddd;
+	 	border-bottom : 1px solid #ddd;
+	}
+	 &--topics {
+	 	@include padding-all(50px, 0px);
+	 	border-bottom : 1px dotted #ddd;
+	 }
+}
+
+.container {
+	&--header-pad-sm {
+		text-align : center;
+		@include padding-all(30px, 0px);
+	}
+	&--header-pad-md {
+		@extend .container--header-pad-sm;
+		@include padding-all(40px, 0px);
+	}
+	&--header-pad-lg {
+		@extend .container--header-pad-sm;
+		@include padding-all(50px, 0px);
+	}
+	&--logo {
+		display: block;
+		margin-top : 10px;
+	}
+	&--emblem {
+		display : inline-block;
+		margin-bottom : 6px;
+	}
+	&--text-center {
+		text-align: center;
+	}
+	&--features-blk {
+		h3 {
+			@include margin-all-split (20px, 0px, 10px, 20px);
+	  		font-size: $font-sm;
+	  		font-family: 'Open Sans', sans-serif;
+	  	}
+	}
+}
+
+.col {
+	&--height-lg {
+		height : $full-height;
+		max-height : inherit;
+	}
+	&--height-md {
+		height : $half-height;
+	}
+	&--height-sm {
+		height : $one-third;
+	}
+	&--height-xs {
+		height : $quarter-height;
+	}
+
+	&--width-lg {
+		width : $full-width;
+		max-width : $full-width;
+	}
+	&--width-md {
+		width : $half-width;
+	}
+	&--width-sm {
+		width : $one-third;
+	}
+	&--width-xs {
+		width : $quarter-width;
+	}
+}
+
+.table {
+	&--thead-bg {
+		background: #f5f5f5;
+	}
+}
+
+.panel {
+	.list-group {
+	.fa {
+			position : absolute;
+			right : 20px;
+		}
+	}
+}

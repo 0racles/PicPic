@@ -1,0 +1,43 @@
+@import '../partials/_variables.scss';
+@import '../partials/mixins/padding.scss';
+
+.btn {
+	/* overriding bootstrap padding here*/
+	padding-top : 15px !important;
+	padding-bottom : 15px !important;
+	&--group-wrapper {
+		width: fit-content;
+    	margin-left: auto;
+    	box-sizing: content-box;
+	}
+	/* adding padding to bootstrap .btn-block class */
+	&-block {
+		@include padding-all(10px, 15px);
+	}
+	&--block {
+		@include padding-all(50px, 0px);
+		text-align : center;
+		clear : both;
+	}
+	&--pager-btn {
+		border : 2px solid #ccc !important;
+		letter-spacing : 2px;
+		padding-top : 10px !important;
+		padding-bottom : 10px !important;
+		font-weight : bolder !important;
+	}
+	&--offer {
+		@include padding-all(5px, 5px);
+	}
+	&--margin-top {
+		@include margin-all-split(20px, 0px, 0px, 0px);
+	}
+	&--override {
+		background : #eee !important;
+		border : none !important;
+		padding : 10px 0px !important;
+	}
+	&--margin-left {
+		@include margin-all-split(0px, 0px, 0px, -10px);
+	}
+}

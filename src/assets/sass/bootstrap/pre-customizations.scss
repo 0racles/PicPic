@@ -1,0 +1,27 @@
+/* this space for bootstrap pre-customization */
+
+/* -------------------------------------  container sizing -------------------------------- */
+$grid-gutter-width : 30px;
+$container-large-desktop:      (940px + $grid-gutter-width) !default;
+
+
+/* ------------------------------------ brand colors ---------------------------------------- */
+ $brand-success : #f4811f;
+ 
+
+
+ /*------------------------------------ components change state -------------------------------- */
+ $component-active-bg: $brand-success;
+
+
+
+
+ /*------------------------------------ reconfiguring nav --------------------------------------- */
+ $navbar-default-link-hover-bg: #f8f8f8;
+ $navbar-default-bg : #ffffff;
+ $navbar-default-link-active-bg: #eeeeee;
+
+/*---------------------------------------- border radius -----------------------------------------*/
+$btn-border-radius-base: 0px;
+$btn-border-radius-large: 0px;
+$btn-border-radius-small: 0px;

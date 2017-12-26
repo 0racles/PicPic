@@ -1,0 +1,85 @@
+@import '../partials/_variables.scss';
+
+.img {
+    &--bg-cover {
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        height : inherit;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    &--bg-cover-boxShadow {
+        background-image: url('../image/hero-screenshot.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        height : inherit;
+        width : 80%;
+        margin-left : 20%;
+        box-shadow : 5px 5px 10px #ddd;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    &--bg-contain {
+        background-image: url('../image/hero-screenshot.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        position : absolute;
+        top : 0;
+        right : 0;
+        left : 0;
+        bottom : 0;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+    &--screenshot-one {
+        background-image: url('../image/screenshot-one.png');
+    }
+    &--screenshot-two {
+        background-image: url('../image/screenshot-two.png');
+    }
+    &--screenshot-three {
+        background-image : url('../image/screenshot-three.png');
+    }
+    &--screenshot-four {
+        background-image : url('../image/screenshot-four.png');
+    }
+    &--screenshot-five {
+        background-image : url('../image/screenshot-five.png');
+    }
+    &--screenshot-six {
+        background-image : url('../image/screenshot-six.png');
+    }
+    &--screenshot-cnet {
+        background-image : url('../image/cnet.png');
+    }
+    &--screenshot-softpedia {
+        background-image : url('../image/softpedia.png');
+    }
+    &--symbol {
+        background-image : url('../image/picpic.png');
+    }
+    &--client-logo {
+        background-image : url('../image/ngwin_logo.png');
+    }
+    &--windows {
+        background-image : url('../image/windows.png');
+    }
+    &--payment {
+        background-image : url('../image/payment.png');
+    }
+    &--middle {
+        display : block;
+        margin : auto;
+    }
+
+     &--middle-margin-top {
+        display : block;
+        margin : 30px auto;
+    }
+}	

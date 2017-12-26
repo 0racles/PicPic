@@ -1,0 +1,11 @@
+@mixin margin-all ($margin-topBottom, $margin-leftRight) {
+	margin : $margin-topBottom $margin-leftRight;
+}
+
+@mixin margin-all-split ($margin-top, $margin-right, $margin-bottom, $margin-left) {
+	margin-top : $margin-top;
+	margin-right : $margin-right;
+	margin-left : $margin-left;
+	margin-bottom : $margin-bottom;
+}
+

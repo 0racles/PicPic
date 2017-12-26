@@ -1,0 +1,46 @@
+@import '../partials/_variables.scss';
+
+.shim {
+	&--padding-right {
+		padding-right: 0px !important;
+	}
+	&--padding-left {
+		padding-left: 0px !important;
+	}
+	&--padding-rl {
+		padding-right : 0px !important;
+		padding-left : 0px !important;
+	}
+	&--padding-trbl {
+		padding : 0px !important;
+	}
+	&--margin-top {
+		margin-top : 0px !important;
+	}
+
+	&--margin-right {
+		margin-right : 0px !important;
+	}
+	&--margin-left {
+		margin-left : 0px !important;
+	}
+	&--margin-rl {
+		margin-right : 0px !important;
+		margin-left : 0px !important;
+	}
+	&--margin-all {
+		margin : 0px !important;
+		}
+	&--pos-abs {
+		position : absolute;
+	}
+	&--pos-rel {
+		position : relative;
+	}
+	&--color-white {
+		color : #fff;
+	}
+	&--color-orange {
+		color : $color-orange;
+	}
+}

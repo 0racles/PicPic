@@ -1,0 +1,464 @@
+/* this space for bootstrap pre-customization */
+/* -------------------------------------  container sizing -------------------------------- */
+/* ------------------------------------ brand colors ---------------------------------------- */
+/*------------------------------------ components change state -------------------------------- */
+/*------------------------------------ reconfiguring nav --------------------------------------- */
+/*---------------------------------------- border radius -----------------------------------------*/
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+.shim--padding-right {
+  padding-right: 0px !important; }
+
+.shim--padding-left {
+  padding-left: 0px !important; }
+
+.shim--padding-rl {
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.shim--padding-trbl {
+  padding: 0px !important; }
+
+.shim--margin-top {
+  margin-top: 0px !important; }
+
+.shim--margin-right {
+  margin-right: 0px !important; }
+
+.shim--margin-left {
+  margin-left: 0px !important; }
+
+.shim--margin-rl {
+  margin-right: 0px !important;
+  margin-left: 0px !important; }
+
+.shim--margin-all {
+  margin: 0px !important; }
+
+.shim--pos-abs {
+  position: absolute; }
+
+.shim--pos-rel {
+  position: relative; }
+
+.shim--color-white {
+  color: #fff; }
+
+.shim--color-orange {
+  color: #f4811f; }
+
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+.navbar {
+  margin-bottom: 0px !important; }
+  .navbar-default {
+    background-color: #fff;
+    /* bootstrap overrides */
+    border-color: #fff;
+    /* bootstrap overrides */ }
+  .navbar--width-full {
+    width: 100%; }
+  .navbar--item {
+    width: 33.33%;
+    text-align: center; }
+
+.nav-pills > li > a:hover {
+  background-color: #ddd !important; }
+
+.nav-pills > li:focus {
+  background-color: #f4811f; }
+
+.nav-pills > li > a:focus {
+  background-color: #f4811f; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #f4811f; }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #f4811f; }
+
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+.footer {
+  background-color: #f8f8f8;
+  box-sizing: border-box; }
+  .footer--padding-tb {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("../fonts/Roboto-Thin.ttf"); }
+
+.font, .font--lg, .font--md, .font--sm {
+  font-family: 'Roboto-Thin', sans-serif !important;
+  color: #333;
+  font-weight: 900; }
+  .font--lg {
+    font-size: 32px;
+    font-weight: 300; }
+  .font--md {
+    font-size: 24px; }
+  .font--sm {
+    font-size: 18px; }
+  .font--xs {
+    font-size: 10px; }
+  .font--middle {
+    text-align: center !important; }
+  .font--right {
+    text-align: right !important; }
+  .font--left {
+    text-align: left !important; }
+  .font--orange {
+    color: #f4811f; }
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  line-height: 20px;
+  color: #333 !important;
+  /* TODO -- ideally this should be done in bootstrap precustomization */ }
+
+.row--bg-gray {
+  background: #eeeeee !important;
+  padding: 10px 0px; }
+
+.row--bg-plain {
+  padding: 15px 0px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; }
+
+.row--bg-white {
+  padding: 15px 0px;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin-bottom: 40px; }
+
+.row--padding-tb50 {
+  padding: 50px 0px; }
+
+.row--pad-bottom {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 40px; }
+
+.row--text-center {
+  text-align: center; }
+
+.container-fluid--bg-plain {
+  padding: 15px 0px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; }
+
+.container-fluid--bg-lightgray {
+  background: #f8f8f8; }
+
+.container-fluid--bg-darkgray {
+  background: #666666; }
+
+.container-fluid--bordered {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; }
+
+.container-fluid--topics {
+  padding: 50px 0px;
+  border-bottom: 1px dotted #ddd; }
+
+.container--header-pad-sm, .container--header-pad-md, .container--header-pad-lg {
+  text-align: center;
+  padding: 30px 0px; }
+
+.container--header-pad-md {
+  padding: 40px 0px; }
+
+.container--header-pad-lg {
+  padding: 50px 0px; }
+
+.container--logo {
+  display: block;
+  margin-top: 10px; }
+
+.container--emblem {
+  display: inline-block;
+  margin-bottom: 6px; }
+
+.container--text-center {
+  text-align: center; }
+
+.container--features-blk h3 {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif; }
+
+.col--height-lg {
+  height: 100%;
+  max-height: inherit; }
+
+.col--height-md {
+  height: 50%; }
+
+.col--height-sm {
+  height: 33.33%; }
+
+.col--height-xs {
+  height: 25%; }
+
+.col--width-lg {
+  width: 100%;
+  max-width: 100%; }
+
+.col--width-md {
+  width: 50%; }
+
+.col--width-sm {
+  width: 33.33%; }
+
+.col--width-xs {
+  width: 25%; }
+
+.table--thead-bg {
+  background: #f5f5f5; }
+
+.panel .list-group .fa {
+  position: absolute;
+  right: 20px; }
+
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+.img--bg-cover {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: inherit;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.img--bg-cover-boxShadow {
+  background-image: url("../image/hero-screenshot.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: inherit;
+  width: 80%;
+  margin-left: 20%;
+  box-shadow: 5px 5px 10px #ddd;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.img--bg-contain {
+  background-image: url("../image/hero-screenshot.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
+
+.img--screenshot-one {
+  background-image: url("../image/screenshot-one.png"); }
+
+.img--screenshot-two {
+  background-image: url("../image/screenshot-two.png"); }
+
+.img--screenshot-three {
+  background-image: url("../image/screenshot-three.png"); }
+
+.img--screenshot-four {
+  background-image: url("../image/screenshot-four.png"); }
+
+.img--screenshot-five {
+  background-image: url("../image/screenshot-five.png"); }
+
+.img--screenshot-six {
+  background-image: url("../image/screenshot-six.png"); }
+
+.img--screenshot-cnet {
+  background-image: url("../image/cnet.png"); }
+
+.img--screenshot-softpedia {
+  background-image: url("../image/softpedia.png"); }
+
+.img--symbol {
+  background-image: url("../image/picpic.png"); }
+
+.img--client-logo {
+  background-image: url("../image/ngwin_logo.png"); }
+
+.img--windows {
+  background-image: url("../image/windows.png"); }
+
+.img--payment {
+  background-image: url("../image/payment.png"); }
+
+.img--middle {
+  display: block;
+  margin: auto; }
+
+.img--middle-margin-top {
+  display: block;
+  margin: 30px auto; }
+
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+.btn {
+  /* overriding bootstrap padding here*/
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  /* adding padding to bootstrap .btn-block class */ }
+  .btn--group-wrapper {
+    width: fit-content;
+    margin-left: auto;
+    box-sizing: content-box; }
+  .btn-block {
+    padding: 10px 15px; }
+  .btn--block {
+    padding: 50px 0px;
+    text-align: center;
+    clear: both; }
+  .btn--pager-btn {
+    border: 2px solid #ccc !important;
+    letter-spacing: 2px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-weight: bolder !important; }
+  .btn--offer {
+    padding: 5px 5px; }
+  .btn--margin-top {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px; }
+  .btn--override {
+    background: #eee !important;
+    border: none !important;
+    padding: 10px 0px !important; }
+  .btn--margin-left {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: -10px;
+    margin-bottom: 0px; }
+
+.icon--lg {
+  font-size: 48px !important; }
+
+.icon--md {
+  font-size: 38px !important; }
+
+.icon--sm {
+  font-size: 28px !important; }
+
+.icon--xs {
+  font-size: initial; }
+
+.icon--blue {
+  color: #337ab7; }
+
+.icon--green {
+  color: #5cb85c; }
+
+.icon--orange {
+  color: #ff7200; }
+
+.icon--gray {
+  color: #a5a5a5 !important; }
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+.img--bg-cover {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: inherit;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.img--bg-cover-boxShadow {
+  background-image: url("../image/hero-screenshot.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: inherit;
+  width: 80%;
+  margin-left: 20%;
+  box-shadow: 5px 5px 10px #ddd;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.img--bg-contain {
+  background-image: url("../image/hero-screenshot.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
+
+.img--screenshot-one {
+  background-image: url("../image/screenshot-one.png"); }
+
+.img--screenshot-two {
+  background-image: url("../image/screenshot-two.png"); }
+
+.img--screenshot-three {
+  background-image: url("../image/screenshot-three.png"); }
+
+.img--screenshot-four {
+  background-image: url("../image/screenshot-four.png"); }
+
+.img--screenshot-five {
+  background-image: url("../image/screenshot-five.png"); }
+
+.img--screenshot-six {
+  background-image: url("../image/screenshot-six.png"); }
+
+.img--screenshot-cnet {
+  background-image: url("../image/cnet.png"); }
+
+.img--screenshot-softpedia {
+  background-image: url("../image/softpedia.png"); }
+
+.img--symbol {
+  background-image: url("../image/picpic.png"); }
+
+.img--client-logo {
+  background-image: url("../image/ngwin_logo.png"); }
+
+.img--windows {
+  background-image: url("../image/windows.png"); }
+
+.img--payment {
+  background-image: url("../image/payment.png"); }
+
+.img--middle {
+  display: block;
+  margin: auto; }
+
+.img--middle-margin-top {
+  display: block;
+  margin: 30px auto; }

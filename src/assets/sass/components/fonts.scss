@@ -1,0 +1,46 @@
+@import '../partials/_variables.scss';
+
+@font-face {
+	font-family : Open Sans;
+	src : url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+	font-family : Roboto-Thin;
+	src : url('../fonts/Roboto-Thin.ttf');
+}
+
+.font {
+	font-family : 'Roboto-Thin', sans-serif !important;
+	color : #333;
+	font-weight : 900;
+	&--lg {
+		font-size : $font-lg;
+		font-weight : 300;
+		@extend .font;
+	}
+	&--md {
+		font-size : $font-md;
+		@extend .font;
+	}
+	&--sm {
+		font-size : $font-sm;
+		@extend .font;
+	}
+	&--xs {
+		font-size : $font-xs;
+	}
+	&--middle {
+		text-align : center !important;
+	}
+	&--right {
+		text-align : right !important;
+	}
+	&--left {
+		text-align : left !important;
+	}
+
+	&--orange {
+		color : $color-orange
+	}
+}

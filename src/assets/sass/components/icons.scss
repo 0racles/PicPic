@@ -1,0 +1,28 @@
+.icon {
+
+	&--lg {
+		font-size : 48px !important;
+	}
+	&--md {
+		font-size : 38px !important;
+	}
+	&--sm {
+		font-size : 28px !important;
+	}
+	&--xs {
+		font-size : initial;
+	}
+
+	&--blue{
+		color : #337ab7;
+	}
+	&--green{
+		color : #5cb85c;
+	}
+	&--orange{
+		color : #ff7200;
+	}
+	&--gray {
+		color : #a5a5a5 !important;
+	}
+}
