@@ -149,6 +149,13 @@ module.exports = {
        inject : 'body'
     }),
 
+     new HtmlWebpackPlugin({
+       hash : true,
+       filename : 'contact_us.html',
+       template : 'ejs-render-loader!./BaseBundle/resources/views/contact.ejs',
+       inject : 'body'
+    }),
+
 
 		new ModernizrWebpackPlugin(),
 
