@@ -22,6 +22,13 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        @media screen and (max-width : 991px) {
+            box-shadow : none;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+        }
     }
     &--bg-contain {
         background-image: url('../image/hero-screenshot.png');

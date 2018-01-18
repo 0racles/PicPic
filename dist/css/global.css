@@ -6,6 +6,7 @@
 /*---------------------------------------- border radius -----------------------------------------*/
 /* ------------------------------------------ block element modifiers --------------------------------*/
 /* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
 .shim--padding-right {
   padding-right: 0px !important; }
 
@@ -21,6 +22,9 @@
 
 .shim--margin-top {
   margin-top: 0px !important; }
+
+.shim--padding-rl-plus {
+  padding: 0px 5px !important; }
 
 .shim--margin-right {
   margin-right: 0px !important; }
@@ -49,6 +53,7 @@
 
 /* ------------------------------------------ block element modifiers --------------------------------*/
 /* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
 .navbar {
   margin-bottom: 0px !important; }
   .navbar-default {
@@ -62,17 +67,11 @@
     width: 33.33%;
     text-align: center; }
 
+.nav-pills > li.active, .nav-pills > li > a.active, .nav-pills > li > a.focus {
+  background-color: #f4811f !important; }
+
 .nav-pills > li > a:hover {
   background-color: #ddd !important; }
-
-.nav-pills > li:focus {
-  background-color: #f4811f; }
-
-.nav-pills > li > a:focus {
-  background-color: #f4811f; }
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-  background-color: #f4811f; }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -80,6 +79,7 @@
 
 /* ------------------------------------------ block element modifiers --------------------------------*/
 /* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
 .footer {
   background-color: #f8f8f8;
   box-sizing: border-box; }
@@ -89,8 +89,10 @@
 
 /* ------------------------------------------ block element modifiers --------------------------------*/
 /* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
 /* ------------------------------------------ block element modifiers --------------------------------*/
 /* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
 @font-face {
   font-family: Open Sans;
   src: url("../fonts/OpenSans-Regular.ttf"); }
@@ -105,9 +107,10 @@
   font-weight: 900; }
   .font--lg {
     font-size: 32px;
-    font-weight: 300; }
+    font-weight: bold; }
   .font--md {
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: bold; }
   .font--sm {
     font-size: 18px; }
   .font--xs {
@@ -176,13 +179,16 @@ body {
 
 .container--header-pad-sm, .container--header-pad-md, .container--header-pad-lg {
   text-align: center;
-  padding: 30px 0px; }
+  padding: 30px 0px;
+  font-weight: bold; }
 
 .container--header-pad-md {
-  padding: 40px 0px; }
+  padding: 40px 0px;
+  font-weight: bold; }
 
 .container--header-pad-lg {
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  font-weight: bold; }
 
 .container--logo {
   display: block;
@@ -238,6 +244,7 @@ body {
 
 /* ------------------------------------------ block element modifiers --------------------------------*/
 /* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
 .img--bg-cover {
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -259,6 +266,13 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media screen and (max-width: 991px) {
+    .img--bg-cover-boxShadow {
+      box-shadow: none;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; } }
 
 .img--bg-contain {
   background-image: url("../image/hero-screenshot.png");
@@ -320,6 +334,7 @@ body {
 
 /* ------------------------------------------ block element modifiers --------------------------------*/
 /* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
 .btn {
   /* overriding bootstrap padding here*/
   padding-top: 15px !important;
@@ -381,8 +396,230 @@ body {
 
 .icon--gray {
   color: #a5a5a5 !important; }
+
+.timeline--container-padding {
+  padding: 20px 0px; }
+
+.timeline--wrapper {
+  position: relative;
+  padding: 2em 0px;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  .timeline--wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    background-color: #d7e4ed;
+    width: 4px;
+    height: 100%; }
+
+.timeline--block:nth-child(1) .timeline--content:before {
+  content: '';
+  position: absolute;
+  top: 38px;
+  left: 41.2%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-left: 7px solid white; }
+
+.timeline--block:nth-child(2) .timeline--content:before {
+  content: '';
+  position: absolute;
+  top: 23%;
+  right: 41.2%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white; }
+
+.timeline--block:nth-child(3) .timeline--content:before {
+  content: '';
+  position: absolute;
+  top: 39%;
+  left: 41.2%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-left: 7px solid white; }
+
+.timeline--block:nth-child(4) .timeline--content:before {
+  content: '';
+  position: absolute;
+  top: 57%;
+  right: 41.2%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white; }
+
+.timeline--block:nth-child(5) .timeline--content:before {
+  content: '';
+  position: absolute;
+  top: 73%;
+  left: 41.2%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-left: 7px solid white; }
+
+.timeline--block:nth-child(6) .timeline--content:before {
+  content: '';
+  position: absolute;
+  top: 95.5%;
+  right: 41.2%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white; }
+
+.timeline--block:nth-child(even) .timeline--content {
+  float: right;
+  margin-right: 20%; }
+
+.timeline--block:nth-child(2n + 3) {
+  margin-top: 144px; }
+
+.timeline--block:nth-child(2) .timeline--icons {
+  background-color: #c03b44; }
+
+.timeline--block:nth-child(3) .timeline--icons {
+  background-color: #f0ca45; }
+
+.timeline--block:nth-child(5) .timeline--icons {
+  background-color: #f0ca45; }
+
+.timeline--block:nth-child(6) .timeline--icons {
+  background-color: #c03b44; }
+
+.timeline--block:nth-child(4) .timeline--icons {
+  padding: 10px !important; }
+
+.timeline--content {
+  width: 200px;
+  margin-left: 20%;
+  margin-top: -30px;
+  border-radius: 0.25em;
+  box-shadow: 0 3px 0 #d7e4ed;
+  padding: 40px;
+  background-color: #fff; }
+
+.timeline--icons {
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-color: #75ce66;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+
+.timeline--image {
+  position: relative;
+  left: 47.5%; }
+
+.is-hidden {
+  visibility: hidden; }
+
+.bounce-in {
+  visibility: visible;
+  animation: cd-bounce-in 0.6s; }
+
+@keyframes cd-bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); }
+  60% {
+    opacity: 1;
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
 /* ------------------------------------------ block element modifiers --------------------------------*/
 /* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
+.xs--show {
+  display: none; }
+
+.sm--only-show {
+  display: none; }
+
+.sm--show {
+  display: none; }
+
+/* ---------------- xs screens 767px and below ----------------------- */
+@media screen and (max-width: 767px) {
+  .xs--show {
+    display: block; }
+  .xs--hide {
+    display: none; } }
+
+/* ------------- xs screen from 480px and below ------------------ */
+@media screen and (max-width: 480px) {
+  .xs--only-show {
+    display: block; }
+  .xs--only-hide {
+    display: none; }
+  .features--block {
+    text-align: center; }
+    .features--block img {
+      width: initial !important; }
+    .features--block .col-xs-12 {
+      padding: 10px 0px;
+      background-color: #fff;
+      margin: 10px auto; } }
+
+/* ------------------ sm screen from 768px and above -------------- */
+@media screen and (min-width: 767px) {
+  .mob--nav-col {
+    display: none; } }
+
+/* ---------------- sm screen from 991px and below ------------------- */
+@media screen and (max-width: 991px) {
+  .sm--show {
+    display: block; }
+  .sm--hide {
+    display: none !important; }
+  .features--block img {
+    width: 100%; }
+  .header--wrapper {
+    min-height: 164px !important; }
+    .header--wrapper .container-fluid {
+      top: 0px !important; } }
+
+/* ---------- md screen width from 1199px and below ------------ */
+@media screen and (max-width: 1199px) {
+  .md--show {
+    display: block !important; }
+  .md--hide {
+    display: none; }
+  /* -------- md screen width from 992px and above -------------- */ }
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  \--only-show {
+    display: none; } }
+
+/* --------- lg screen width from 1200px and above (IF EVER NEEDED) ------ */
+@media screen and (min-width: 1200px) {
+  .lg--show {
+    display: block; }
+  .lg--hide {
+    display: none; } }
+
+/* --------------- targets screen width from 480px to 991px ------- */
+@media screen and (min-width: 480px) and (max-width: 991px) {
+  .sm--row-shim {
+    margin-left: 0px !important; } }
+
+/* ----------- targets screen width from 768px to 991px ----------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sm--only-show {
+    display: block; }
+  .sm--only-hide {
+    display: none; } }
+/* ------------------------------------------ block element modifiers --------------------------------*/
+/* -------------------------------- TEXT SIZING -------------------------------*/
+/* ------ Media Queries ----------------------- */
 .img--bg-cover {
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -404,6 +641,13 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media screen and (max-width: 991px) {
+    .img--bg-cover-boxShadow {
+      box-shadow: none;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; } }
 
 .img--bg-contain {
   background-image: url("../image/hero-screenshot.png");

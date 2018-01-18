@@ -12,6 +12,19 @@ $('.div').css({
 	'height' : '200px',
 	'color' : '#333'
 	});
+
+$(window).on('scroll', function(){
+	$('.timeline--block').each(function(){
+		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.15 && $(this).find('.timeline--image').hasClass('is-hidden') ) {
+			$(this).find('.timeline--image, .timeline--content').removeClass('is-hidden').addClass('bounce-in');
+		}
+	});
+});
+
+$('.btn').click(function() {
+	alert('visit http://ngwin.com/picpick to perform this action');
+});
+
 });
 
 // this script should be well commented

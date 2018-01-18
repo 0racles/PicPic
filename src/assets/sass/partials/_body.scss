@@ -64,14 +64,17 @@ body {
 	&--header-pad-sm {
 		text-align : center;
 		@include padding-all(30px, 0px);
+		font-weight : bold;
 	}
 	&--header-pad-md {
 		@extend .container--header-pad-sm;
 		@include padding-all(40px, 0px);
+		font-weight : bold;
 	}
 	&--header-pad-lg {
 		@extend .container--header-pad-sm;
 		@include padding-all(50px, 0px);
+		font-weight : bold;
 	}
 	&--logo {
 		display: block;

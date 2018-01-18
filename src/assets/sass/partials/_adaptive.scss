@@ -1,0 +1,183 @@
+
+@import 'variables';
+//* INITIALIZING
+
+.xs {
+	&--show {
+		display : none;
+	}
+}
+
+.sm {
+	&--only-show {
+		display : none;
+	}
+}
+
+.sm {
+	&--show {
+		display : none;
+	}
+}
+
+
+
+/* ---------------- xs screens 767px and below ----------------------- */
+
+
+@media screen and (max-width : $screen-xs-max) {
+.xs {
+	&--show {
+		display : block;
+	}
+	&--hide {
+		display : none;
+	}
+  }
+ .footer {
+ 
+  }
+  .header {
+  		
+  	}
+ 
+}
+
+
+/* ------------- xs screen from 480px and below ------------------ */
+
+@media screen and (max-width : $screen-xs-min) {
+.xs {
+	&--only-show {
+		display : block;
+	}
+	&--only-hide {
+		display : none;
+	}
+  }
+  .features {
+ 	&--block  {
+ 		text-align : center;
+ 		& img {
+ 		width : initial !important;
+ 	  }
+ 	  & .col-xs-12 {
+ 	  	padding : 10px 0px;
+ 	  	background-color : #fff;
+ 	  	margin : 10px auto;
+ 	  }
+ 	}
+ }
+}
+
+
+/* ------------------ sm screen from 768px and above -------------- */
+
+@media screen and (min-width : $screen-xs-max) {
+	.mob {
+		&--nav-col {
+			display : none;
+		}
+	}
+}
+
+/* ---------------- sm screen from 991px and below ------------------- */
+
+ @media screen and (max-width : $screen-sm-max) {
+.sm {
+	&--show {
+		display : block;
+	}
+	&--hide {
+		display : none !important;
+	}
+}
+.features {
+ 	&--block img {
+ 		width : 100%;
+ 	}
+ }
+ .footer {
+ 	
+  }
+ .header {
+ 	&--wrapper {
+ 	min-height : 164px !important;
+ 	  &	.container-fluid {
+ 	  	top : 0px !important;
+ 	  }
+ 	}
+  &--row {
+		
+	  }
+  &--nav {
+  		
+     }
+   }
+}
+
+/* ---------- md screen width from 1199px and below ------------ */
+
+@media screen and (max-width : $screen-md-max) {
+.md {
+	&--show {
+		display : block !important;
+	}
+	&--hide {
+		display : none;
+	}
+  }
+
+  /* -------- md screen width from 992px and above -------------- */
+
+  @media screen and (min-width : $screen-md-min) {
+    &--only-show {
+    	display : none;
+    }
+  }
+}
+
+/* --------- lg screen width from 1200px and above (IF EVER NEEDED) ------ */
+
+@media screen and (min-width : $screen-lg-min) {
+.lg {
+	&--show {
+		display : block;
+	}
+	&--hide {
+		display : none;
+	}
+  }
+}
+
+
+//* TARGETS
+
+/* --------------- targets screen width from 480px to 991px ------- */
+
+@media screen and (min-width : $screen-xs-min) and (max-width : $screen-sm-max) {
+ .sm {
+   	&--row-shim {
+   		margin-left : 0px !important;
+   		}
+   	}
+ .footer {
+ 
+  }
+}
+
+/* ----------- targets screen width from 768px to 991px ----------- */
+
+@media screen and (min-width : $screen-sm-min) and (max-width : $screen-sm-max) {
+.sm {
+	&--only-show {
+		display : block;
+	}
+	&--only-hide {
+		display : none;
+	}
+  }
+.footer {
+	
+  }
+}

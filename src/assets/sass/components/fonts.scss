@@ -16,11 +16,12 @@
 	font-weight : 900;
 	&--lg {
 		font-size : $font-lg;
-		font-weight : 300;
+		font-weight : bold;
 		@extend .font;
 	}
 	&--md {
 		font-size : $font-md;
+		font-weight : bold;
 		@extend .font;
 	}
 	&--sm {
