@@ -73,6 +73,15 @@
 .nav-pills > li > a:hover {
   background-color: #ddd !important; }
 
+.nav-pills > li:focus {
+  background-color: #f4811f; }
+
+.nav-pills > li > a:focus {
+  background-color: #f4811f; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #f4811f !important; }
+
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: #f4811f; }

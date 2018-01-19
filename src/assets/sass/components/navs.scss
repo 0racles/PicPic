@@ -2,7 +2,7 @@
 
 .navbar {
 	margin-bottom : 0px !important;
-
+	
 	&-default {
   		background-color: #fff; /* bootstrap overrides */
   		border-color: #fff; /* bootstrap overrides */
@@ -24,6 +24,17 @@
 	background-color : #ddd !important;
 }
 
+.nav-pills > li:focus {
+	background-color : $color-orange;
+}
+
+.nav-pills > li > a:focus {
+	background-color : $color-orange;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	background-color : $color-orange !important;
+}
 
 .nav>li>a:hover,
 .nav>li>a:focus {
