@@ -510,7 +510,7 @@ body {
   margin-left: 20%;
   margin-top: -30px;
   border-radius: 0.25em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 0 3px 20px 6px #d7e4ed;
   padding: 40px;
   background-color: #fff; }
 
@@ -561,7 +561,9 @@ body {
   .xs--show {
     display: block; }
   .xs--hide {
-    display: none; } }
+    display: none; }
+  .btn--mob-menu {
+    top: -37px; } }
 
 /* ------------- xs screen from 480px and below ------------------ */
 @media screen and (max-width: 480px) {

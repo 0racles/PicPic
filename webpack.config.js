@@ -51,28 +51,7 @@ module.exports = {
          { test: /\.woff(2)?(\?.*$|$)/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
       	   { test: /\.(ttf|eot|svg)(\?.*$|$)/, loader: "file-loader" },
 
-      	  /* {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 10000,
-              mimetype: 'application/font-woff'
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [
-          { loader: 'file-loader' }
-        ]
-      }, */
-
-      	   // font-awesome ends here
-
-      	  // image loader starts here 
+      	  
   		  {
     		test: /\.(gif|png|jpe?g|svg)$/,
     		use : [
