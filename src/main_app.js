@@ -53,6 +53,9 @@ $('.btn').click(function() {
 	alert('visit http://ngwin.com/picpick to perform this action');
 });
 
+// form validation
+$('#contact_form').validate();
+
 });
 
 // this script should be well commented
